@@ -89,8 +89,9 @@ public final class GameScreen extends javax.swing.JFrame {
      */
     public GameScreen() {
         initComponents();
+        
         this.setLocation(screenSize.width/2 - this.getSize().width/2 , screenSize.height/2 - this.getSize().height/2);
-
+        boxIconSetter();
         randomSoundPlayer();
         gameplay(mario ,luigi ,mushroom);
     }
@@ -328,7 +329,7 @@ public final class GameScreen extends javax.swing.JFrame {
  
     
     public void scoreClickControl(JLabel jLabel) {       
-        if(jLabel.getIcon() == box) {
+        if(jLabel.getIcon() == box || jLabel.getIcon() == null) {
             score --;
             playSound(WRONG);
         }
@@ -432,6 +433,49 @@ public final class GameScreen extends javax.swing.JFrame {
         
         //not possible
         return jLab20;
+    }
+    
+    public void boxIconSetter() {
+        jLab1.setIcon(box);
+        jLab2.setIcon(box);
+        jLab3.setIcon(box);
+        jLab4.setIcon(box);
+        jLab5.setIcon(box);
+        jLab6.setIcon(box);
+        jLab7.setIcon(box);
+        jLab8.setIcon(box);
+        jLab9.setIcon(box);
+        jLab10.setIcon(box);
+        jLab11.setIcon(box);
+        jLab12.setIcon(box);
+        jLab13.setIcon(box);
+        jLab14.setIcon(box);
+        jLab15.setIcon(box);
+        jLab16.setIcon(box);
+        jLab17.setIcon(box);
+        jLab18.setIcon(box);
+        jLab19.setIcon(box);
+        jLab20.setIcon(box);
+        jLab21.setIcon(box);
+        jLab22.setIcon(box);
+        jLab23.setIcon(box);
+        jLab24.setIcon(box);
+        jLab25.setIcon(box);
+        jLab26.setIcon(box);
+        jLab27.setIcon(box);
+        jLab28.setIcon(box);
+        jLab29.setIcon(box);
+        jLab30.setIcon(box);
+        jLab31.setIcon(box);
+        jLab32.setIcon(box);
+        jLab33.setIcon(box);
+        jLab34.setIcon(box);
+        jLab35.setIcon(box);
+        jLab36.setIcon(box);
+        jLab37.setIcon(box);
+        jLab38.setIcon(box);
+        jLab39.setIcon(box);
+        jLab40.setIcon(box);  
     }
     
 
